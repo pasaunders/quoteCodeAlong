@@ -1,0 +1,8 @@
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\bin\Debug\netcoreapp1.1\quoteCodeAlong.deps.json
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\bin\Debug\netcoreapp1.1\quoteCodeAlong.runtimeconfig.json
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\bin\Debug\netcoreapp1.1\quoteCodeAlong.runtimeconfig.dev.json
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\obj\Debug\netcoreapp1.1\quoteCodeAlong.AssemblyInfo.cs
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\bin\Debug\netcoreapp1.1\quoteCodeAlong.dll
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\bin\Debug\netcoreapp1.1\quoteCodeAlong.pdb
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\obj\Debug\netcoreapp1.1\quoteCodeAlong.dll
+C:\Users\kaorti\code\microsoft_class\c_sharp\quoteCodeAlong\obj\Debug\netcoreapp1.1\quoteCodeAlong.pdb
