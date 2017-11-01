@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace quoteCodeAlong.Models
 {
-    public class Quote
+    public class Quote : BaseEntity
     {
         public int id {get; set;}
         public string text {get; set;}

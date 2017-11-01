@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace quoteCodeAlong.Models
 {
-    public class Meta
+    public class Meta : BaseEntity
     {
         [Required]
         public int id {get; set;}

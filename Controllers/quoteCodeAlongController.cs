@@ -46,6 +46,33 @@ namespace quoteCodeAlong.Controllers
             TryValidateModel(incoming);
             if(ModelState.IsValid)
             {
+                // things to make:
+                //  meta
+                Meta newMeta = new Meta();
+                newMeta.note = incoming.meta;
+                _context.meta.Add(newMeta);
+                _context.SaveChanges();
+                newMeta = _context.meta.Last();
+                //  quote
+                Quote newQuote = new Quote();
+                newQuote.authorId = incoming.authorId;
+                newQuote.author = _context.author.FirstOrDefault(author => author.id == incoming.authorId);
+                newQuote.text = incoming.text;
+                newQuote.metaId = newMeta.id;
+                newQuote.meta = newMeta;
+                _context.quote.Add(newQuote);
+                _context.SaveChanges();
+                //  categoryJoin
+                categoryJoin newJoin = new categoryJoin();
+                newJoin.categoryId = incoming.categoryId;
+                newJoin.category = _context.category.SingleOrDefault(category => category.id == incoming.categoryId);
+                newJoin.quoteId = _context.quote.Last().id;
+                newJoin.quote = _context.quote.Last();
+                _context.category_has_quote.Add(newJoin);
+                //Update quotecategories
+                newQuote.categoryJoin.Add(newJoin);
+                _context.SaveChanges();
+
                 System.Console.WriteLine("quoteform seems to work");
             } else {
                 System.Console.WriteLine("quoteform broke");
